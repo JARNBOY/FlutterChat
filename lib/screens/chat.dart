@@ -17,13 +17,14 @@ class _ChatScreenState extends State<ChatScreen> {
     final fcm = FirebaseMessaging.instance;
     await fcm.requestPermission();
 
-    final token = await fcm.getToken();
-    print(token);
+    // final token = await fcm.getToken();
+    // print('tken is : ${token}');
+    fcm.subscribeToTopic('chat');
 
   }
 
   @override
-  void initState() async {
+  void initState() {
     // TODO: implement initState
     super.initState();
 
