@@ -5,8 +5,7 @@ class NewMessenger extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
+    return NewMessengerState();
   }
 }
 
@@ -27,7 +26,7 @@ class NewMessengerState extends State<NewMessenger> {
     }
 
     //send to firebase
-    
+
     _messageController.clear();
   }
 
